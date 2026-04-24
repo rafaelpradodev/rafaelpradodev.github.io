@@ -1,0 +1,73 @@
+.projetos-lista {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  border: 1px solid var(--borda);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.projeto {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 20px;
+  background: var(--bg2);
+  transition: background 0.15s;
+  gap: 16px;
+}
+
+.projeto:hover {
+  background: #18181c;
+}
+
+.projeto-esq {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  flex: 1;
+}
+
+.projeto-emoji {
+  font-size: 20px;
+  margin-top: 2px;
+}
+
+.projeto-nome {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 3px;
+  font-family: 'JetBrains Mono', monospace;
+}
+
+.projeto-desc {
+  font-size: 13px;
+  color: var(--cinza);
+  line-height: 1.6;
+}
+
+.projeto-dir {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+}
+
+.projeto-tag {
+  font-size: 11px;
+  font-family: 'JetBrains Mono', monospace;
+  color: var(--cinza2);
+  background: rgba(255, 255, 255, 0.04);
+  padding: 3px 8px;
+  border-radius: 4px;
+}
+
+.projeto-link {
+  color: var(--cinza2);
+  font-size: 16px;
+  transition: color 0.15s;
+}
+
+.projeto:hover .projeto-link {
+  color: var(--branco);
+}
