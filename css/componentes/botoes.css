@@ -1,0 +1,35 @@
+.botoes {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 56px;
+}
+
+.btn-azul {
+  background: var(--azul);
+  color: #fff;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 10px 20px;
+  border-radius: 6px;
+  transition: opacity 0.15s;
+}
+
+.btn-azul:hover {
+  opacity: 0.85;
+}
+
+.btn-borda {
+  border: 1px solid var(--borda);
+  color: var(--cinza);
+  font-size: 13px;
+  font-weight: 500;
+  padding: 10px 20px;
+  border-radius: 6px;
+  transition: border-color 0.15s, color 0.15s;
+}
+
+.btn-borda:hover {
+  border-color: #444;
+  color: var(--branco);
+}
